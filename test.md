@@ -51,7 +51,7 @@ view
 [2]:http://www.baidu.com "百度搜索的地址"
 [Jack Huang的github博客空间]:https://mucaoshen.github.io/blog/
 ```
-view
+view  
 我经常上的几个网站有[Google][1]，[Baidu][2]和[Jack Huang的github博客空间][]。
 
 [1]:http://www.google.com
