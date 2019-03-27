@@ -310,7 +310,7 @@ view
 使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[\[1\]](#myfootnote1)</sup>, 你可以使用Leanote编辑器进行书写。
 
 [^1]:Markdown是一种纯文本标记语言
-<a name="myfootnote1"> [1] </a> HyperText Markup Language 超文本标记语言
+<a name="myfootnote1">\[1\]</a> HyperText Markup Language 超文本标记语言
 
 ## Latex公式
 ### 行内公式
