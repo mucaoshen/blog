@@ -304,7 +304,7 @@ view
 使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[\[1\]](#myfootnote1)</sup>, 你可以使用Leanote编辑器进行书写。
 
 [^1]:Markdown是一种纯文本标记语言
-<a name="myfootnote1"> [1] </a> HyperText Markup Language 超文本标记语言
+<a name="myfootnote1"> \[1\] </a> HyperText Markup Language 超文本标记语言
 ```
 view  
 使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[\[1\]](#myfootnote1)</sup>, 你可以使用Leanote编辑器进行书写。
@@ -313,9 +313,12 @@ view
 <a name="myfootnote1">\[1\]</a> HyperText Markup Language 超文本标记语言
 
 ## Latex公式
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 ### 行内公式
 ```markdown
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表示
 ```
 view  
-质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表示
+质能守恒方程可以用一个很简洁的方程式 <a href="https://www.codecogs.com/eqnedit.php?latex=E=mc^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E=mc^2" title="E=mc^2" /></a> 来表示
