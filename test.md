@@ -298,15 +298,24 @@ view
 在需要添加注脚的文字后加上脚注名字[^注脚名字]，称为加注。然后在文本的任意位置(一般在最后)添加脚注，
 脚注前必须有对应的脚注名字。  
 注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换
-之后，也会自动归类到文章的最后
+之后，也会自动归类到文章的最后  
+又注意：github的markdown是不支持这种方式的注脚的，可以采用另外一种办法-超链接来解决，如下所示
 ```markdown
-使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
+使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[\[1\]](#myfootnote1)</sup>, 你可以使用Leanote编辑器进行书写。
 
 [^1]:Markdown是一种纯文本标记语言
+<a name="myfootnote1"> [1] </a> HyperText Markup Language 超文本标记语言
 ```
 view  
-使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[1](#myfootnote1)</sup>, 你可以使用 Leanote[^Le] 编辑器进行书写。
+使用 Markdown[^1]可以效率的书写文档, 直接转换成HTML<sup>[\[1\]](#myfootnote1)</sup>, 你可以使用Leanote编辑器进行书写。
 
 [^1]:Markdown是一种纯文本标记语言
-[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
 <a name="myfootnote1"> [1] </a> HyperText Markup Language 超文本标记语言
+
+## Latex公式
+### 行内公式
+```markdown
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表示
+```
+view  
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表示
