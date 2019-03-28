@@ -403,3 +403,92 @@ view
     :---:|---:
     Leanote 高级账号|60元/年
     Leanote 超级账号|120元/年
+
+## 分隔线
+语法说明：  
+可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面是每种写法：
+```markdown
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+```
+view  
+显示效果都一样
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+## 代码
+语法说明：
+插入程序代码的方式有两种，一种是利用缩进(Tab)，另一种是利用`符号包裹代码。
+
+### 行内式
+```markdown
+C语言里的函数 `scanf()` 怎么使用？
+```
+view  
+C语言里的函数 `scanf()` 怎么使用？
+
+### 缩进式多行代码
+缩进4个空格或一个制表符,一个代码区块会一直持续到没有缩进的哪一行(或是文件结尾)。  
+注意：必须在缩进前先回车一行
+```markdown
+
+    #include <stdio.h>
+    int main(void)
+    {
+        printf("Hello world\n");
+    }
+```
+view
+  
+    #include <stdio.h>
+    int main(void)
+    {
+        printf("Hello world\n");
+    }
+
+### 用六个`包裹多行代码，可以额外申明修饰的语言
+```markdown
+\```(这里可以申明代码语言，比python，注意去掉\符号)
+#include <stdio.h>
+int main(void)
+{
+    printf("Hello world\n");
+}
+\```
+```
+view
+```C
+#include <stdio.h>
+int main(void)
+{
+    printf("Hello world\n");
+}
+```
+
+### html原始码
+语法说明：  
+在代码区块里面， & 、 < 和 > 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的
+ Markdown 都会帮你处理，例如：
+ ```html
+<div class="footer">
+   © 2016 ***
+</div>
+```
+view
+<div class="footer">
+   © 2016 ***
+</div>
