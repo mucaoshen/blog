@@ -344,6 +344,7 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 ```
 
 ## 流程图
+<script src="mermaid.full.min.js"></script>
 ```mermaid
 graphe TD;
 A-->B;
@@ -351,8 +352,10 @@ A-->C;
 B-->D;
 C-->D;
 ```
+<div class="mermaid">
 graphe TD;
 A-->B;
 A-->C;
 B-->D;
 C-->D;
+</div>
