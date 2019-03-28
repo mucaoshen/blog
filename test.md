@@ -316,9 +316,43 @@ view
 <script type="text/javascript"
 src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+语法说明：  
+因为github的markdown不再支持latex公式渲染，因此现在的方式是1.通过latex编辑器网址[latex编辑器网址]获取图片，并放到相应目录中，在github内引用相应的图片
+2.在文章的头部加入如下的script脚本，然后再去latex编辑器网址[latex编辑器网址]获取html的代码，直接引用。如下：
+
+[latex编辑器网址]: https://www.codecogs.com/eqnedit.php "latex编辑器网址"
+```markdown
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+// E=mc^2
+<a href="https://www.codecogs.com/eqnedit.php?latex=E=mc^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E=mc^2" title="E=mc^2" /></a>
+```
 ### 行内公式
 ```markdown
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表示
+对github已经不起作用了
 ```
 view  
 质能守恒方程可以用一个很简洁的方程式 <a href="https://www.codecogs.com/eqnedit.php?latex=E=mc^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E=mc^2" title="E=mc^2" /></a> 来表示
+### $$表示整行公式
+```markdown
+$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+对github已经不起作用
+```
+
+## 流程图
+```mermaid
+graphe TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
+```
+graphe TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
