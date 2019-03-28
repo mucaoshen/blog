@@ -374,13 +374,13 @@ github的markdown暂时不支持流程图
     Leanote 超级账号|120元/年
     ```
 view  
-1\. 简单方式写表格（github貌似不起作用）  
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
-Content Cell  | Content Cell
+Content Cell  | Content Cell  
+
 2\. 原生方式写表格  
-|学号|姓名|分数|
+| 学号 | 姓名 | 分数 |
 |---|---|---|
 |小明|男|75|
 |小红|女|79|
