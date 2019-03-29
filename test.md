@@ -492,3 +492,18 @@ view
 <div class="footer">
    © 2016 ***
 </div>
+
+## 任务列表
+语法说明：  
+这个是github markdown的一个特性，可以通过建立任务表来展示当前的任务执行情况
+```markdown
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+```
+view  
+- [x] @mentions, #refs, [links](), **formatting**, and ~~tags~~ supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
